@@ -1,0 +1,19 @@
+{
+  "name": "kurs20k",
+  "version": "1.0.0",
+  "description": "This is my journeyman piece in the bootcamp of neuefische",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefiedler/kurs20k.git"
+  },
+  "author": "Jonas Elias Fiedler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jefiedler/kurs20k/issues"
+  },
+  "homepage": "https://github.com/jefiedler/kurs20k#readme"
+}
