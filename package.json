@@ -22,6 +22,7 @@
   "homepage": "https://github.com/jefiedler/kurs20k#readme",
   "devDependencies": {
     "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react": "^7.20.6",
     "prettier": "^2.1.1"
   }
