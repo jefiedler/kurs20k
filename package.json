@@ -10,9 +10,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettify": "prettier --write .",
-    "client": "cd client && npm start",
     "server": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm start"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/jefiedler/kurs20k#readme",
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react": "^7.20.6",
