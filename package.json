@@ -1,8 +1,12 @@
 {
   "name": "kurs20k",
+  "private": true,
   "version": "1.0.0",
+  "engines": {
+    "node": "12.x"
+  },
   "description": "This is my journeyman piece in the bootcamp of neuefische",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/jefiedler/kurs20k/issues"
   },
-  "homepage": "https://github.com/jefiedler/kurs20k#readme"
+  "homepage": "https://github.com/jefiedler/kurs20k#readme",
+  "devDependencies": {
+    "prettier": "^2.1.1"
+  }
 }
