@@ -6,7 +6,11 @@ import Page from "./stories/Page";
 function App() {
   return (
     <div className="App">
-      <Page />
+      <Page
+        onLogin={() => console.log("login")}
+        onLogout={() => console.log("logout")}
+        onCreateAccount={() => console.log("create account")}
+      />
       <a href="/storybook">To Storybook</a>
     </div>
   );
