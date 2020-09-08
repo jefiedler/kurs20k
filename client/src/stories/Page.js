@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Header from "../../components/Header";
 import "./page.css";
+import { Header } from "./Header";
 
 const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <article>
