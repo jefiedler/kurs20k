@@ -8,6 +8,7 @@
   "description": "This is my journeyman piece in the bootcamp of neuefische",
   "main": "server.js",
   "scripts": {
+    "postinstall": "cd client && npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd client && npm run build && npm run build-storybook",
     "prettify": "prettier --write .",
