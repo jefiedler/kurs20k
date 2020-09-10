@@ -6,33 +6,18 @@ function createParticipantsRouter(database) {
 
   router.get("/all", async (req, res) => {
     try {
-      const participants = await readAllParticipants(database);
-      if (!participants) {
+      const getParticipants = await readAllParticipants(database);
+      if (!getParticipants) {
         res.status(404).send(`Read Datapase faild`);
         return;
       }
-      res.status(200).send(`All participants are found ${participants}`);
+      res.status(200).send(getParticipants);
     } catch (error) {
       console.error("Somthing went wrong", error);
       res.status(500).send(error.massage);
     }
   });
-
-  // router.get("/all", async (req, res) => {
-  //     try{
-
-  //     } catch (error){
-
-  //     }
-  // })
-
-  // router.post("/create", async (req, res) => {
-  //     try{
-
-  //     } catch (error){
-
-  //     }
-  // })
+  return router;
 }
 
 module.exports = createParticipantsRouter;

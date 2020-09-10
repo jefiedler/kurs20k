@@ -9,6 +9,7 @@ const createParticipantsRouter = require("./routes/createParticipantsRouter");
 const dbClient = new MongoClient(process.env.MONGO_URI, {
   useUnifiedTopology: true,
 });
+
 const app = express();
 const port = process.env.PORT || 3001;
 
@@ -28,7 +29,7 @@ async function server() {
     app.use("/api/participant", createParticipantsRouter(database));
 
     app.listen(port, () => {
-      console.log(`Redy!! App is listening on http://localhost:${port}`);
+      console.log(`Ready! App is listening on http://localhost:${port}`);
     });
   } catch (error) {
     //Ensures that the client will close when you finish/error
@@ -38,19 +39,3 @@ async function server() {
 }
 
 server();
-
-// // Serve any static files
-// app.use(express.static(path.join(__dirname, "client/build")));
-// app.use(
-//   "/storybook",
-//   express.static(path.join(__dirname, "client/storybook-static"))
-// );
-
-// // Handle React routing, return all requests to React app
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "client/build", "index.html"));
-// });
-
-// app.listen(port, () => {
-//   console.log(`Server is Ready! Server listening at http://localhost:${port}`);
-// });

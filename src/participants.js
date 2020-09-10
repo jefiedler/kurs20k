@@ -1,10 +1,12 @@
 async function readAllParticipants(database) {
   const collection = database.collection("participants");
   const allParticipants = collection.find({});
-  if (!allParticipants) {
+  console.log(typeof allParticipants);
+  const participants = JSON.stringify(allParticipants);
+  if (!participants) {
     return null;
   }
-  return allParticipants;
+  return participants;
 }
 
 exports.readAllParticipants = readAllParticipants;
