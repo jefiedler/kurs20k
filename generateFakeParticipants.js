@@ -6,12 +6,11 @@ const dbclient = new MongoClient(process.env.MONGO_URI, {
   useUnifiedTopology: true,
 });
 
-function getRandomeBirth() {
+function getRandomBirth() {
   const day = Math.floor(Math.random() * (31 - 1)) + 1;
-  const month = Math.floor(Math.random() * (12 - 1)) + 1;
+  const month = Math.floor(Math.random() * (11 - 0)) + 0;
   const year = Math.floor(Math.random() * (2002 - 1920)) + 1920;
-  const birthDate = `${day}.${month}.${year}`;
-
+  const birthDate = new Date(year, month, day).getTime();
   return birthDate;
 }
 
@@ -25,7 +24,7 @@ async function generateFakeParticipants(startValue, generateValue) {
       let participant = {
         firstName: faker.name.firstName(),
         lastName: faker.name.lastName(),
-        birthDate: getRandomeBirth(),
+        birthDate: getRandomBirth(),
         street:
           faker.address.streetName() +
           " " +
