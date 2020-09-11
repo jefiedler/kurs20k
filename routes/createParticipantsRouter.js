@@ -8,7 +8,7 @@ function createParticipantsRouter(database) {
     try {
       const getParticipants = await readAllParticipants(database);
       if (!getParticipants) {
-        res.status(404).send(`Read Datapase faild`);
+        res.status(404).send(`Read Database faild`);
         return;
       }
       res.status(200).send(getParticipants);
