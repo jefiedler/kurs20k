@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 
-function LoginButton({ text }) {
+function LoginButton({ label }) {
   return (
     <>
-      <Button>{text}</Button>
+      <Button>{label}</Button>
     </>
   );
 }
@@ -15,7 +15,7 @@ export default LoginButton;
 //Proptyps
 
 LoginButton.propTypes = {
-  text: PropTypes.string,
+  label: PropTypes.string,
 };
 
 //Styling

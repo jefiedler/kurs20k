@@ -10,5 +10,5 @@ const Template = (args) => <LoginButton {...args} />;
 
 export const Login = Template.bind({});
 Login.args = {
-  text: "Login",
+  label: "Login",
 };
