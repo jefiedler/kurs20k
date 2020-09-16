@@ -1,8 +1,8 @@
 import React from "react";
-import InputField from "../components/InputField";
+import InputField from "../components/InputFields/InputField";
 
 export default {
-  title: "Example/InputField",
+  title: "Example/InputFields/InputField",
   component: InputField,
 };
 
