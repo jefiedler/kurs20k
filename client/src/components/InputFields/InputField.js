@@ -2,44 +2,45 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 
-function TextInput({ text, placeholderText }) {
+function InputField({ labelText, inputType, placeholder }) {
   return (
     <>
       <Form>
-        <Label>{text}</Label>
-        <Input type="text" placeholder={placeholderText}></Input>
+        <Label>{labelText}</Label>
+        <Input type={inputType} placeholder={placeholder}></Input>
       </Form>
     </>
   );
 }
 
-export default TextInput;
+export default InputField;
 
 // Proptyps
 
-TextInput.propTypes = {
-  text: PropTypes.string,
-  placeholderText: PropTypes.string,
+InputField.propTypes = {
+  labelText: PropTypes.string,
+  inputType: PropTypes.string,
+  placeholder: PropTypes.string,
 };
 
 // Styling
 
 const Form = styled.form`
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: 0.5fr;
   grid-template-columns: 1fr 1fr;
   width: 100vh;
+  margin: 5px;
 `;
 
 const Label = styled.label`
   background-color: #868c56;
-  color: #f2f2f2;
-  font-size: 20px;
   text-align: center;
+  font-size: 20px;
+  color: #f2f2f2;
   border: none;
   border-radius: 4px 0 0 4px;
 `;
-
 const Input = styled.input`
   font-size: 20px;
   border: none;
