@@ -10,5 +10,6 @@ const Template = (args) => <LoginButton {...args} />;
 
 export const Login = Template.bind({});
 Login.args = {
-  label: "Login",
+  buttonLabel: "Login",
+  buttonType: "button",
 };
