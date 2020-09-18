@@ -24,6 +24,8 @@ Links.propTypes = {
 const Link = styled.a`
   color: #d9cc8b;
   font-size: 15px;
+  padding-top: 10px;
+  padding-left: 20px;
   text-decoration: underline;
   font-style: italic;
 
