@@ -1,19 +1,26 @@
 import React from "react";
 import LoginButton from "../Buttons/LoginButton";
-import TextInput from "../InputFields/TextInput";
-import PasswordInput from "../InputFields/PasswordInput";
 import Links from "../Links";
 import styled from "@emotion/styled";
+import InputField from "../InputFields/InputField";
 
 function LoginScreen() {
   return (
     <GridContainer>
-      <TextInput text="Nutzername" placeholderText="Benutzername angeben" />
-      <PasswordInput label="Passwort" placeholderText="Passwort" />
+      <InputField
+        labelText="Nutzername"
+        inputType="text"
+        placeholder="Username"
+      />
+      <InputField
+        labelText="Passwort"
+        inputType="password"
+        placeholder="Passwort"
+      />
       <LoginButton label="Login" />
       <LinkContainer>
         <Links text="Passwort vergessen?" />
-        <Links text="Accounterstellen" />
+        <Links text="Account erstellen" />
       </LinkContainer>
     </GridContainer>
   );
@@ -33,6 +40,6 @@ const GridContainer = styled.div`
 
 const LinkContainer = styled.div`
   display: flex;
-
+  justify-content: space-around;
   background-color: #3f5941;
 `;
