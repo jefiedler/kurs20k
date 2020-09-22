@@ -1,13 +1,13 @@
 import React from "react";
 
-import SerachBar from "./SearchBar";
+import SearchBar from "./SearchBar";
 
 export default {
-  title: "Example/SerachBar",
-  component: SerachBar,
+  title: "Example/SearchBar",
+  component: SearchBar,
 };
 
-const Template = (args) => <SerachBar {...args} />;
+const Template = (args) => <SearchBar {...args} />;
 
 export const SearchBar = Template.bind({});
 SearchBar.args = {
