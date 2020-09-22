@@ -26,7 +26,6 @@ Brand.propTypes = {
 const Container = styled.div`
   display: grid;
   grid-template-columns: 65px 1fr;
-  background-color: #3f5941;
   p {
     color: #f2f2f2;
     font-size: 20px;

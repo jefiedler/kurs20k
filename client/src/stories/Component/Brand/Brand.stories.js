@@ -3,7 +3,7 @@ import Brand from "./Brand";
 import brandLogo from "../../assets/logo.svg";
 
 export default {
-  title: "Example/Brand",
+  title: "Components/Brands/Brand",
   component: Brand,
 };
 
