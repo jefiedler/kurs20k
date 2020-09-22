@@ -54,7 +54,7 @@ const Container = styled.div`
   background-color: #3f5941;
   width: 278px;
   height: 1078px;
-
+  border-radius: 0 5px 5px 0;
   ul {
     align-content: center;
   }
