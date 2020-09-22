@@ -11,7 +11,7 @@ SearchBar.propTypes = {
 function SearchBar(inputType, value, onChange) {
   return (
     <Conainer>
-      <input type={inputType} vlaue={value} onChange={onChange} />
+      <input type={inputType} value={value} onChange={onChange} />
       <button type="submit">Suchen</button>
     </Conainer>
   );
