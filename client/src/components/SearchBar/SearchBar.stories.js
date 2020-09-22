@@ -9,7 +9,7 @@ export default {
 
 const Template = (args) => <SearchBar {...args} />;
 
-export const SearchBar = Template.bind({});
-SearchBar.args = {
+export const Search = Template.bind({});
+Search.args = {
   inputType: "text",
 };
