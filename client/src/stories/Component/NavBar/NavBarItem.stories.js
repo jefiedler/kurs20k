@@ -5,7 +5,7 @@ import BillIcon from "../../assets/receipt24px.svg";
 import CourseIcon from "../../assets/course24px.svg";
 
 export default {
-  title: "Example/NavBarItem",
+  title: "Components/Navigation/NavBarItem",
   component: NavBarItem,
 };
 
