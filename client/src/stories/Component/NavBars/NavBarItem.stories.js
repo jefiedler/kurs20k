@@ -1,11 +1,11 @@
 import React from "react";
 import NavBarItem from "./NavBarItem";
-import PartisepantIcon from "../assets/participantIcon24px.svg";
-import BillIcon from "../assets/receipt24px.svg";
-import CourseIcon from "../assets/course24px.svg";
+import PartisepantIcon from "../../assets/participantIcon24px.svg";
+import BillIcon from "../../assets/receipt24px.svg";
+import CourseIcon from "../../assets/course24px.svg";
 
 export default {
-  title: "Example/NavBarItem",
+  title: "Components/Navigation/NavBarItem",
   component: NavBarItem,
 };
 

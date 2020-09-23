@@ -27,6 +27,7 @@ const ListItem = styled.li`
   list-style: none;
   align-items: center;
   a {
+    margin: 0 0 0 10px;
     color: #d9cc8b;
   }
 `;
