@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 function MainFooter() {
   return (
     <Footer>
-      <span>Copyright © Kurs20k 2020</span>
+      <p>Copyright © Kurs20k 2020</p>
     </Footer>
   );
 }
@@ -17,9 +17,12 @@ MainFooter.propTypes = {};
 //Styling
 
 const Footer = styled.footer`
+  display: flex;
   width: 1920px;
-  height: 116px;
+  height: 120px;
   background-color: #f2f2f2;
   text-align: center;
   color: #0d0d0d;
+  align-items: center;
+  justify-content: center;
 `;
