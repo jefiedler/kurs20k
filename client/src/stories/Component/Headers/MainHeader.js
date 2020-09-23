@@ -36,7 +36,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 278px 1fr auto;
   width: 1920px;
-  height: 116px;
+  height: 120px;
   background-color: #868c56;
   border-radius: 0 0px 5px 5px;
   h1 {
