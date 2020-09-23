@@ -2,17 +2,27 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 import MainHeader from "../Component/Headers/MainHeader";
+import NavBar from "../Component/NavBars/NavBar";
+import MainFooter from "../Component/Footer/Footer";
 
 function BasicLayout({ link, title, user, imgPath, imgTitle }) {
   return (
     <Container>
-      <MainHeader
-        href={link}
-        titleName={title}
-        userName={user}
-        imgSrc={imgPath}
-        imgName={imgTitle}
-      />
+      <HeaderContainer>
+        <MainHeader
+          href={link}
+          titleName={title}
+          userName={user}
+          imgSrc={imgPath}
+          imgName={imgTitle}
+        />
+      </HeaderContainer>
+      <NavContainer>
+        <NavBar />
+      </NavContainer>
+      <FooterContainer>
+        <MainFooter />
+      </FooterContainer>
     </Container>
   );
 }
@@ -30,4 +40,25 @@ BasicLayout.propTypes = {
 
 //Styling
 
-const Container = styled.div``;
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: repeat(16, 120px);
+  grid-template-rows: repeat(9, 120px);
+`;
+
+const HeaderContainer = styled.div`
+  grid-column: 1 / 16;
+  grid-row: 1 / 2;
+  z-index: 1;
+`;
+const NavContainer = styled.div`
+  grid-column: 1 / 3;
+  grid-row: 1 / 10;
+  z-index: 2;
+`;
+
+const FooterContainer = styled.div`
+  grid-column: 1 / 16;
+  grid-row: 9 / 10;
+  z-index: 1;
+`;
