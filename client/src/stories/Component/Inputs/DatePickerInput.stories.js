@@ -2,7 +2,7 @@ import React from "react";
 import DatePickerInput from "./DatePickerInput";
 
 export default {
-  title: "Components/Inputs/InputFields",
+  title: "Components/Inputs/Dates",
   component: DatePickerInput,
 };
 

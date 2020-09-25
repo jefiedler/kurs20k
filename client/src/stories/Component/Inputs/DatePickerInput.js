@@ -5,7 +5,6 @@ import {
   KeyboardDatePicker,
 } from "@material-ui/pickers";
 import PropTypes from "prop-types";
-import { date } from "faker";
 
 function DatePickerInput({ idName, label }) {
   const [selectedDate, setSelectedDate] = React.useState();
