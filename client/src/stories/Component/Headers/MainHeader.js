@@ -38,7 +38,7 @@ const Container = styled.div`
   width: 1920px;
   height: 120px;
   background-color: #868c56;
-  border-radius: 0 0px 5px 5px;
+  border-radius: 0 0 5px 5px;
   h1 {
     color: #f2f2f2;
     grid-column: 2 / 3;
