@@ -4,9 +4,10 @@ import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core";
 
 function BasicTextInput({ idName, title, inputType, onChange }) {
-  // const classes = useStyles();
+  const classes = useStyles();
+
   return (
-    <>
+    <div className={classes.root}>
       <TextField
         required
         id={idName}
@@ -14,7 +15,7 @@ function BasicTextInput({ idName, title, inputType, onChange }) {
         type={inputType}
         onChange={onChange}
       />
-    </>
+    </div>
   );
 }
 
@@ -31,11 +32,11 @@ BasicTextInput.propTypes = {
 
 //Styling
 
-// const useStyles = makeStyles((theme) => ({
-//     root: {
-//       '& .MuiTextField-root': {
-//         margin: theme.spacing(1),
-//         width: '25ch',
-//       },
-//     },
-//   }));
+const useStyles = makeStyles((theme) => ({
+  root: {
+    "& .MuiTextField-root": {
+      margin: theme.spacing(1),
+      width: "25ch",
+    },
+  },
+}));

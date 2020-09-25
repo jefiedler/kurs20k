@@ -4,6 +4,7 @@ import {
   MuiPickersUtilsProvider,
   KeyboardDatePicker,
 } from "@material-ui/pickers";
+import { makeStyles } from "@material-ui/core";
 import PropTypes from "prop-types";
 
 function DatePickerInput({ idName, label }) {
@@ -13,10 +14,10 @@ function DatePickerInput({ idName, label }) {
     setSelectedDate(date);
   };
 
-  console.log(selectedDate);
+  const classes = useStyles();
 
   return (
-    <>
+    <div className={classes.root}>
       <MuiPickersUtilsProvider utils={DateFnsUtils}>
         <KeyboardDatePicker
           disableToolbar
@@ -33,7 +34,7 @@ function DatePickerInput({ idName, label }) {
           }}
         />
       </MuiPickersUtilsProvider>
-    </>
+    </div>
   );
 }
 
@@ -47,3 +48,11 @@ DatePickerInput.propTypes = {
 };
 
 //Styling
+const useStyles = makeStyles((theme) => ({
+  root: {
+    "& .MuiTextField-root": {
+      margin: theme.spacing(1),
+      width: "25ch",
+    },
+  },
+}));

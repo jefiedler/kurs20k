@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { FormControl, InputLabel, MenuItem, Select } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -12,7 +11,7 @@ function SalutationSelectorinput() {
   };
 
   return (
-    <>
+    <div>
       <FormControl className={classes.formControl}>
         <InputLabel id="salutation-select-label">Anrede</InputLabel>
         <Select
@@ -25,15 +24,11 @@ function SalutationSelectorinput() {
           <MenuItem value={"Frau"}>Frau</MenuItem>
         </Select>
       </FormControl>
-    </>
+    </div>
   );
 }
 
 export default SalutationSelectorinput;
-
-//PropTypes
-
-SalutationSelectorinput.propTypes = {};
 
 //Styles
 const useStyles = makeStyles((theme) => ({

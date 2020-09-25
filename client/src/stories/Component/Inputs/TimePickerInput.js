@@ -4,8 +4,8 @@ import {
   MuiPickersUtilsProvider,
 } from "@material-ui/pickers";
 import DateFnsUtils from "@date-io/date-fns";
+import { makeStyles } from "@material-ui/core/styles";
 import PropTypes from "prop-types";
-import { date } from "faker";
 
 function TimePickerInput({ idName, label }) {
   const [selectedTime, setSelectedTime] = React.useState();
@@ -14,10 +14,10 @@ function TimePickerInput({ idName, label }) {
     setSelectedTime(date);
   };
 
-  console.log(selectedTime);
+  const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.root}>
       <MuiPickersUtilsProvider utils={DateFnsUtils}>
         <KeyboardTimePicker
           margin="normal"
@@ -46,3 +46,11 @@ TimePickerInput.propTypes = {
 };
 
 //Styling
+const useStyles = makeStyles((theme) => ({
+  root: {
+    "& .MuiTextField-root": {
+      margin: theme.spacing(1),
+      width: "25ch",
+    },
+  },
+}));
