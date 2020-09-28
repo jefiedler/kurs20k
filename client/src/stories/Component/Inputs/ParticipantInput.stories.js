@@ -10,3 +10,6 @@ const Template = (args) => <ParticipantInput {...args} />;
 
 export const EditParticipant = Template.bind({});
 EditParticipant.args = {};
+
+export const CreateParticipant = Template.bind({});
+CreateParticipant.args = {};
