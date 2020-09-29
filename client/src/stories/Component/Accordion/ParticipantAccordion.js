@@ -1,12 +1,15 @@
 import React from "react";
-import styled from "@emotion/styled";
-import { makeStyles } from "@material-ui/core";
+
+import { Grid, makeStyles } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import PropTypes from "prop-types";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import Accordion from "@material-ui/core/Accordion";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import BasicTextInput from "../Inputs/BasicTextInput";
+import SalutationSelectorinput from "../Inputs/SalutationSelectorInput";
+import DatePickerInput from "../Inputs/DatePickerInput";
 
 function ParticipantAccordion({ lastName, firstName, birth, mobile, mail }) {
   const classes = useStyles();
@@ -16,7 +19,7 @@ function ParticipantAccordion({ lastName, firstName, birth, mobile, mail }) {
   };
 
   return (
-    <AccordionContainer>
+    <Grid container spacing={3}>
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
@@ -31,14 +34,29 @@ function ParticipantAccordion({ lastName, firstName, birth, mobile, mail }) {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className={classes.details}>
-            Nachname: {lastName}
-            Vorname: {firstName}
-            Geburtstag: {birth}
-          </Typography>
+          <Grid container spacing={1}>
+            <Grid container item xs={12} spacing={3}>
+              <SalutationSelectorinput />
+            </Grid>
+            <Grid container item xs={12} spacing={2}>
+              <BasicTextInput idName="lastName" title="Nachname" onChange="" />
+              <BasicTextInput idName="firstName" title="Vorname" onChange="" />
+              <DatePickerInput idName="birth" label="Geburtsdatum" />
+            </Grid>
+            <Grid container item xs={12} spacing={2}>
+              <BasicTextInput idName="street" title="Straße" onChange="" />
+              <BasicTextInput idName="zipCode" title="PLZ" onChange="" />
+              <BasicTextInput idName="city" title="Ort" onChange="" />
+            </Grid>
+            <Grid container item xs={12} spacing={2}>
+              <BasicTextInput idName="mail" title="E-Mail" onChange="" />
+              <BasicTextInput idName="landLine" title="Festnetz" onChange="" />
+              <BasicTextInput idName="mobile" title="Mobil" onChange="" />
+            </Grid>
+          </Grid>
         </AccordionDetails>
       </Accordion>
-    </AccordionContainer>
+    </Grid>
   );
 }
 
@@ -53,12 +71,7 @@ ParticipantAccordion.propTypes = {
   mail: PropTypes.string,
 };
 
-// //Styling
-
-const AccordionContainer = styled.div`
-  width: 1400px;
-  height: 600px;
-`;
+//Styling
 
 const useStyles = makeStyles((theme) => ({
   heading: {
