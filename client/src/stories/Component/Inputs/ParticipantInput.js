@@ -66,8 +66,8 @@ ParticipantInput.propTypes = {};
 //Styling
 const FormContainer = styled.form`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 230px 230px;
+  grid-template-rows: 235px 100px;
 `;
 
 const PersonalDataContainer = styled.div``;

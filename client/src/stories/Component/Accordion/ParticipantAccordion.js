@@ -7,6 +7,7 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import Accordion from "@material-ui/core/Accordion";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import ParticipantInput from "../Inputs/ParticipantInput";
 
 function ParticipantAccordion({ lastName, firstName, birth, mobile, mail }) {
   const classes = useStyles();
@@ -32,9 +33,7 @@ function ParticipantAccordion({ lastName, firstName, birth, mobile, mail }) {
         </AccordionSummary>
         <AccordionDetails>
           <Typography className={classes.details}>
-            Nachname: {lastName}
-            Vorname: {firstName}
-            Geburtstag: {birth}
+            <ParticipantInput />
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -66,7 +65,6 @@ const useStyles = makeStyles((theme) => ({
   },
   details: {
     width: "1350px",
-    height: "150px",
     background: "#F2F2F2",
     borderRadius: "5px",
   },
