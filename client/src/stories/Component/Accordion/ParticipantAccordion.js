@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Grid, makeStyles } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import PropTypes from "prop-types";
@@ -82,5 +81,8 @@ const useStyles = makeStyles((theme) => ({
     height: "150px",
     background: "#F2F2F2",
     borderRadius: "5px",
+  },
+  button: {
+    margin: theme.spacing(1),
   },
 }));
