@@ -21,7 +21,7 @@ Partisepants.args = {
 
 export const Finances = Template.bind({});
 Finances.args = {
-  label: "Teilnehmer",
+  label: "Rechnungen",
   href: "#",
   srcPath: BillIcon,
   imgName: "bill icon",
@@ -29,7 +29,7 @@ Finances.args = {
 
 export const Courses = Template.bind({});
 Courses.args = {
-  label: "Teilnehmer",
+  label: "Kurse",
   href: "#",
   srcPath: CourseIcon,
   imgName: "course icon",

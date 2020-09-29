@@ -52,10 +52,12 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #3f5941;
-  width: 278px;
-  height: 1078px;
+  width: 240px;
+  height: 1080px;
   border-radius: 0 5px 5px 0;
   ul {
     align-content: center;
+    margin-left: 20px;
+    margin-top: 75px;
   }
 `;
