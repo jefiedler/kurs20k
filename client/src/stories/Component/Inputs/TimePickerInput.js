@@ -38,7 +38,7 @@ function TimePickerInput({ idName, label }) {
 
 export default TimePickerInput;
 
-//Proptyps
+//PropTypes
 
 TimePickerInput.propTypes = {
   idName: PropTypes.string,

@@ -21,7 +21,7 @@ function BasicTextInput({ idName, title, inputType, onChange }) {
 
 export default BasicTextInput;
 
-//Proptyps
+//PropTypes
 
 BasicTextInput.propTypes = {
   idName: PropTypes.string,
