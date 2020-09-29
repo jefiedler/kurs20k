@@ -82,7 +82,4 @@ const useStyles = makeStyles((theme) => ({
     background: "#F2F2F2",
     borderRadius: "5px",
   },
-  button: {
-    margin: theme.spacing(1),
-  },
 }));
