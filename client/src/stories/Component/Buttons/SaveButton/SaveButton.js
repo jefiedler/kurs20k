@@ -16,7 +16,7 @@ function DeleteButton({ variant, color, size, handleClick }) {
       className={classes.button}
       startIcon={<SaveIcon />}
     >
-      Löschen
+      Speichern
     </Button>
   );
 }
