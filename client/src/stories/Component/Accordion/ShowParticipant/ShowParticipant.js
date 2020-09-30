@@ -44,7 +44,7 @@ function ShowParticipant({
         <AccordionDetails>
           <Grid container spacing={1}>
             <Grid container item xs={12} spacing={3}>
-              <TextOutput />
+              <TextOutput idName="salutation" title="Anrede" data="Herr" />
             </Grid>
             <Grid container item xs={12} spacing={2}>
               <TextOutput idName="lastName" title="Nachname" data={lastName} />
