@@ -1,15 +1,15 @@
 import React from "react";
-import ParticipantAccordion from "./ParticipantAccordion";
+import EditParticipantAccordion from "./EditParticipantAccordion";
 
 export default {
   title: "Components/Accordions/ParticipantAccordion",
-  component: ParticipantAccordion,
+  component: EditParticipantAccordion,
 };
 
-const Template = (args) => <ParticipantAccordion {...args} />;
+const Template = (args) => <EditParticipantAccordion {...args} />;
 
-export const Participant = Template.bind({});
-Participant.args = {
+export const Edit = Template.bind({});
+Edit.args = {
   lastName: "Mustermann",
   firstName: "Max",
   birth: "20.05.1966",

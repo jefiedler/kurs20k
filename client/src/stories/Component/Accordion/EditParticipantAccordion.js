@@ -9,8 +9,15 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import BasicTextInput from "../Inputs/BasicTextInput";
 import SalutationSelectorinput from "../Inputs/SalutationSelectorInput";
 import DatePickerInput from "../Inputs/DatePickerInput";
+import SaveButton from "../Buttons/SaveButton/index";
 
-function ParticipantAccordion({ lastName, firstName, birth, mobile, mail }) {
+function EditParticipantAccordion({
+  lastName,
+  firstName,
+  birth,
+  mobile,
+  mail,
+}) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const handleChange = (panel) => (event, isExpanded) => {
@@ -52,6 +59,7 @@ function ParticipantAccordion({ lastName, firstName, birth, mobile, mail }) {
               <BasicTextInput idName="landLine" title="Festnetz" onChange="" />
               <BasicTextInput idName="mobile" title="Mobil" onChange="" />
             </Grid>
+            <SaveButton variant="contained" color="primary" size="smale" />
           </Grid>
         </AccordionDetails>
       </Accordion>
@@ -59,10 +67,10 @@ function ParticipantAccordion({ lastName, firstName, birth, mobile, mail }) {
   );
 }
 
-export default ParticipantAccordion;
+export default EditParticipantAccordion;
 
 //Proptypes
-ParticipantAccordion.propTypes = {
+EditParticipantAccordion.propTypes = {
   firstName: PropTypes.string,
   lastName: PropTypes.string,
   birth: PropTypes.string,
