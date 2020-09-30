@@ -6,10 +6,10 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import Accordion from "@material-ui/core/Accordion";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import BasicTextInput from "../Inputs/BasicTextInput";
-import SalutationSelectorinput from "../Inputs/SalutationSelectorInput";
-import DatePickerInput from "../Inputs/DatePickerInput";
-import SaveButton from "../Buttons/SaveButton/index";
+import BasicTextInput from "../../Inputs/BasicTextInput";
+import SalutationSelectorinput from "../../Inputs/SalutationSelectorInput";
+import DatePickerInput from "../../Inputs/DatePickerInput";
+import SaveButton from "../../Buttons/SaveButton/index";
 
 function EditParticipantAccordion({
   lastName,
