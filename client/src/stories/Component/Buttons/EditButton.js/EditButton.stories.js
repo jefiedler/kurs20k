@@ -8,8 +8,8 @@ export default {
 
 const Template = (args) => <EditButton {...args} />;
 
-export const Delete = Template.bind({});
-Delete.args = {
+export const Edit = Template.bind({});
+Edit.args = {
   variant: "contained",
   color: "default",
   size: "smale",
