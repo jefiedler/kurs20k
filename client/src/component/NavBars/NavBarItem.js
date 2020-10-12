@@ -29,5 +29,6 @@ const ListItem = styled.li`
   a {
     margin: 0 0 0 10px;
     color: #d9cc8b;
+    text-decoration: none;
   }
 `;

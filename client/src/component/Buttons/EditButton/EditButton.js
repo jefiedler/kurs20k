@@ -16,7 +16,9 @@ function EditButton({ variant, color, size, handleClick }) {
       className={classes.button}
       startIcon={<EditIcon />}
     >
-      Bearbeiten
+      <a className={classes.link} href="/editParticipant">
+        Bearbeiten
+      </a>
     </Button>
   );
 }
@@ -35,5 +37,9 @@ EditButton.propTypes = {
 const useStyles = makeStyles((theme) => ({
   button: {
     margin: theme.spacing(1),
+  },
+  link: {
+    textDecoration: "none",
+    color: "#ffff",
   },
 }));

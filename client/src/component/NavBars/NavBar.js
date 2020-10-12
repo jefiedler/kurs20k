@@ -15,19 +15,19 @@ function NavBar() {
       <ul>
         <NavBarItem
           label="Teilnehmer"
-          href="www.google.de"
+          href="/teilnehmer"
           srcPath={PartisepantIcon}
           imgName="Teilnehmer Icon"
         />
         <NavBarItem
           label="Kurse"
-          href="www.amazon.de"
+          href="/kurse"
           srcPath={CourseIcon}
           imgName="Kurs Icon"
         />
         <NavBarItem
-          label="Rrechnungen"
-          href="www.apple.de"
+          label="Rechnungen"
+          href="/rechnungen"
           srcPath={BillIcon}
           imgName="Rechnungs Icon"
         />

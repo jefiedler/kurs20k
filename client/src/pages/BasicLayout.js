@@ -56,7 +56,6 @@ const NavContainer = styled.div`
   grid-row: 1 / 10;
   z-index: 2;
 `;
-
 const FooterContainer = styled.div`
   grid-column: 1 / 16;
   grid-row: 9 / 10;
