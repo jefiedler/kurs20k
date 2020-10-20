@@ -7,6 +7,7 @@ import DateFnsUtils from "@date-io/date-fns";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ShowParticipantPage from "../src/pages/ShowParticipantPage";
 import EditParticipantPage from "../src/pages/EditParticipantPage";
+import HomePage from "../src/pages/HomePage";
 import firmBrand from "../src/stories/assets/logo.svg";
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
               user="Admin"
               imgPath={firmBrand}
             />
+          </Route>
+          <Route path="/home">
+            <HomePage title="Home" user="Admin" imgPath={firmBrand}></HomePage>
           </Route>
           <Route path="/">
             <BasicLayout
