@@ -4,9 +4,9 @@ import styled from "@emotion/styled";
 import MainHeader from "../component/Headers/index";
 import NavBar from "../component/NavBars/NavBar";
 import MainFooter from "../component/Footer/index";
-import ContentEditParticipant from "../../src/component/Content/Participant/Edit/index";
+import Home from "../component/Content/HomeScreen/index";
 
-function EditParticipantPage({ link, title, user, imgPath, imgTitle }) {
+function HomePage({ link, title, user, imgPath, imgTitle }) {
   return (
     <Container>
       <HeaderContainer>
@@ -21,7 +21,9 @@ function EditParticipantPage({ link, title, user, imgPath, imgTitle }) {
       <NavContainer>
         <NavBar />
       </NavContainer>
-      <ContentContainer></ContentContainer>
+      <ContentContainer>
+        <Home user={user}></Home>
+      </ContentContainer>
       <FooterContainer>
         <MainFooter />
       </FooterContainer>
@@ -29,10 +31,10 @@ function EditParticipantPage({ link, title, user, imgPath, imgTitle }) {
   );
 }
 
-export default EditParticipantPage;
+export default HomePage;
 
 //Proptypes
-EditParticipantPage.propTypes = {
+HomePage.propTypes = {
   link: PropTypes.string,
   title: PropTypes.string,
   user: PropTypes.string,
