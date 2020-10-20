@@ -1,7 +1,5 @@
 import React from "react";
 import GlobalStyles from "./GlobalStyles";
-import BasicLayout from "../../client/src/pages/BasicLayout";
-import userImg from "../src/stories/assets/logo.svg";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import DateFnsUtils from "@date-io/date-fns";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
