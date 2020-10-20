@@ -4,8 +4,9 @@ import styled from "@emotion/styled";
 import MainHeader from "../component/Headers/index";
 import NavBar from "../component/NavBars/NavBar";
 import MainFooter from "../component/Footer/index";
+import ContentEditParticipant from "../../src/component/Content/Participant/Edit/index";
 
-function BasicLayout({ link, title, user, imgPath, imgTitle }) {
+function EditParticipantPage({ link, title, user, imgPath, imgTitle }) {
   return (
     <Container>
       <HeaderContainer>
@@ -20,6 +21,9 @@ function BasicLayout({ link, title, user, imgPath, imgTitle }) {
       <NavContainer>
         <NavBar />
       </NavContainer>
+      <ContentContainer>
+        <ContentEditParticipant />
+      </ContentContainer>
       <FooterContainer>
         <MainFooter />
       </FooterContainer>
@@ -27,10 +31,10 @@ function BasicLayout({ link, title, user, imgPath, imgTitle }) {
   );
 }
 
-export default BasicLayout;
+export default EditParticipantPage;
 
 //Proptypes
-BasicLayout.propTypes = {
+EditParticipantPage.propTypes = {
   link: PropTypes.string,
   title: PropTypes.string,
   user: PropTypes.string,
@@ -56,6 +60,11 @@ const NavContainer = styled.div`
   grid-row: 1 / 10;
   z-index: 2;
 `;
+const ContentContainer = styled.div`
+  grid-column: 3 / 16;
+  grid-row: 2 / 9;
+`;
+
 const FooterContainer = styled.div`
   grid-column: 1 / 16;
   grid-row: 9 / 10;

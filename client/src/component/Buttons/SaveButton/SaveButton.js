@@ -16,7 +16,9 @@ function DeleteButton({ variant, color, size, handleClick }) {
       className={classes.button}
       startIcon={<SaveIcon />}
     >
-      Speichern
+      <a className={classes.link} href="/teilnehmer">
+        Speichern
+      </a>
     </Button>
   );
 }
@@ -35,5 +37,9 @@ DeleteButton.propTypes = {
 const useStyles = makeStyles((theme) => ({
   button: {
     margin: theme.spacing(1),
+  },
+  link: {
+    textDecoration: "none",
+    color: "#ffff",
   },
 }));

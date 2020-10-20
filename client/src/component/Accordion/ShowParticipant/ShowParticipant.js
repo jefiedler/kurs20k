@@ -17,6 +17,10 @@ function ShowParticipant({
   birth,
   mobile,
   mail,
+  street,
+  zip,
+  city,
+  landLine,
   editButtonClick,
   deleteButtonClick,
 }) {
@@ -51,14 +55,14 @@ function ShowParticipant({
               <DateOutput idName="birth" label="Geburtsdatum" data={birth} />
             </Grid>
             <Grid container item xs={12} spacing={2}>
-              <TextOutput idName="street" title="Straße" data="" />
-              <TextOutput idName="zipCode" title="PLZ" data="" />
-              <TextOutput idName="city" title="Ort" data="" />
+              <TextOutput idName="street" title="Straße" data={street} />
+              <TextOutput idName="zipCode" title="PLZ" data={zip} />
+              <TextOutput idName="city" title="Ort" data={city} />
             </Grid>
             <Grid container item xs={12} spacing={2}>
-              <TextOutput idName="mail" title="E-Mail" data="" />
-              <TextOutput idName="landLine" title="Festnetz" data="" />
-              <TextOutput idName="mobile" title="Mobil" data="" />
+              <TextOutput idName="mail" title="E-Mail" data={mail} />
+              <TextOutput idName="landLine" title="Festnetz" data={landLine} />
+              <TextOutput idName="mobile" title="Mobil" data={mobile} />
             </Grid>
             <EditButton
               variant="contained"
@@ -88,6 +92,10 @@ ShowParticipant.propTypes = {
   birth: PropTypes.string,
   mobile: PropTypes.string,
   mail: PropTypes.string,
+  street: PropTypes.string,
+  zip: PropTypes.string,
+  city: PropTypes.string,
+  landLine: PropTypes.string,
   editButtonClick: PropTypes.func,
   deleteButtonClick: PropTypes.func,
 };
