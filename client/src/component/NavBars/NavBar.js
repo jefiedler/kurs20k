@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 import NavBarItem from "./NavBarItem";
+import HomeIcon from "../../stories/assets/homeIcon.svg";
 import PartisepantIcon from "../../stories/assets/participantIcon24px.svg";
 import BillIcon from "../../stories/assets/receipt24px.svg";
 import CourseIcon from "../../stories/assets/course24px.svg";
@@ -13,6 +14,12 @@ function NavBar() {
     <Container>
       <Brand imgSrc={BrandLogo} imgName="Firm logo" firmName="Kurs20k" />
       <ul>
+        <NavBarItem
+          label="Home"
+          href="/home"
+          srcPath={HomeIcon}
+          imgName="Home Icon"
+        />
         <NavBarItem
           label="Teilnehmer"
           href="/teilnehmer"
