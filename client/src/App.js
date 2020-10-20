@@ -31,17 +31,8 @@ function App() {
               imgPath={firmBrand}
             />
           </Route>
-          <Route path="/home">
-            <HomePage title="Home" user="Admin" imgPath={firmBrand}></HomePage>
-          </Route>
           <Route path="/">
-            <BasicLayout
-              link="#"
-              title="Teilnehmer"
-              user="Admin"
-              imgPath={userImg}
-              imgTitle="User icon"
-            />
+            <HomePage title="Home" user="Admin" imgPath={firmBrand}></HomePage>
           </Route>
         </Switch>
       </MuiPickersUtilsProvider>
