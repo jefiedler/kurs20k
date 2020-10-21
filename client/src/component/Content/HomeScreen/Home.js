@@ -14,16 +14,19 @@ function Home({ user }) {
           categorieTitle="Teilnehmerverwaltung"
           description="Hier können Teilnehmer angelegt, gelöscht, durchsucht und Kontaktdaten gefunden werden."
           buttonTitle="Zur Teilnehmerverwaltung"
+          link="/teilnehmer"
         />
         <BasicCard
           categorieTitle="Kursverwaltung"
           description="Hier können Kursverwaltung angelegt, gelöscht und durchsucht werden."
           buttonTitle="Zur Kursverwaltung"
+          link="/kurse"
         />
         <BasicCard
           categorieTitle="Rechnungsverwaltung"
           description="Hier können Rechnungen angelegt, gelöscht und durchsucht werden."
           buttonTitle="Zur Rechnungsverwaltung"
+          link="/rechnungen"
         />
       </div>
     </div>

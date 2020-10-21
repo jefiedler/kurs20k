@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
 
 BasicCard.propTypes = {};
 
-function BasicCard({ categorieTitle, description, buttonTitle }) {
+function BasicCard({ categorieTitle, description, buttonTitle, link }) {
   const classes = useStyles();
 
   return (
@@ -23,7 +23,11 @@ function BasicCard({ categorieTitle, description, buttonTitle }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">{buttonTitle}</Button>
+        <Button size="small">
+          <a className={classes.link} href={link}>
+            {buttonTitle}
+          </a>
+        </Button>
       </CardActions>
     </Card>
   );
@@ -36,6 +40,7 @@ BasicCard.propTypes = {
   categorieTitle: PropTypes.string,
   description: PropTypes.string,
   buttonTitle: PropTypes.string,
+  link: PropTypes.string,
 };
 
 //Styling
@@ -46,5 +51,8 @@ const useStyles = makeStyles({
   },
   pos: {
     marginBottom: 12,
+  },
+  link: {
+    textDecoration: "none",
   },
 });
